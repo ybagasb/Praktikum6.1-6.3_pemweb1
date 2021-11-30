@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Praktikum 6.2</title>
+    <style>
+        * {
+            box-sizing: border-box; 
+        }
+        body {
+            margin: 0;
+        }
+        .navbar {
+            display: flex;
+            float: left;
+            background: pink;
+            width: 40vh;
+            height: 100vh;
+        }
+        .main {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        .main1 {
+            display: flex;
+            flex: 1;
+        }
+        .main1 article {
+            flex: 1;
+            order: 1;
+        }
+        .main1 aside {
+            flex: 0 0 20vw;
+            background: #03DAC5;
+            order: 2;
+        }
+        header, footer {
+            background: khaki;
+            height: 20vh;
+        }
+        header, footer, article, nav, aside {
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar"><h3>Nav</h3></nav>
+    <div class="main">
+        <header><h3>Header</h3></header>
+        <div class="main1">
+            <article><h3>Article</h3></article>
+            <aside><h3>Aside</h3></aside>
+        </div>
+        <footer><h3>Footer</h3></footer>
+    </div>
+</body>
+</html>
